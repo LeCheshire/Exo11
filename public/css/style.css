@@ -1,27 +1,14 @@
-section{
-    padding-bottom: 50px;
-    border-bottom: black 1px solid;
+/* exo sup 3 */
+table{
+    border-spacing:30px;
 }
-section:first-child h4{
-    color:blue;
+table:first-child tr td{
+    border:2px black solid;
+    padding:10px;
 }
-section:nth-child(2){
-    border-bottom: red 5px solid;
+table tr:nth-child(2n+ 1) td{
+    background-color:orangered;
 }
-section:nth-child(3) h3,
-section:nth-child(3) ul{
-    color: red;
-}
-section:nth-child(4) ul li>a{
-    font-size:larger;
-}
-section:nth-child(5) h3+span{
-    color:blue;
-}
-section:nth-child(6) img[alt='la-tartine']{
-    border: 1px black solid;
-    border-radius:50%;
-}
-section:nth-child(7) p:hover{
-    color:green;
+table tr:last-child td:last-child{
+    color: white;
 }
