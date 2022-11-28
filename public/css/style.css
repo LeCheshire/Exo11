@@ -2,13 +2,67 @@
 table{
     border-spacing:30px;
 }
-table:first-child tr td{
+td{
     border:2px black solid;
     padding:10px;
 }
-table tr:nth-child(2n+ 1) td{
+tr:nth-child(2n+ 1){
     background-color:orangered;
 }
-table tr:last-child td:last-child{
+tr:last-child{
     color: white;
+}
+td:first-child:first-letter{
+    font-size: 40px;
+}
+/* exo sup 2 */
+*{
+    font-family:Helvetica, sans-serif
+}
+h1{
+    text-align: center;
+    color:red;
+}
+h2{
+    text-decoration: underline;
+}
+article h2{
+    color:blue;
+}
+section h2{
+    color:green;
+}
+h2+p{
+    color:red;
+    font-style:italic;
+}
+h1 ~ p{
+    color:violet;
+}
+/* exo sup 1 */
+h1{
+    border:red 2px solid;
+}
+section ul li:hover:nth-child(2),li:hover:nth-child(3){
+    color:red;
+    text-decoration: underline;
+}
+span+p{
+    background-color: green;
+}
+section>ul:first-child>li{
+    border-left:3px black solid;
+}
+section:nth-child(3n + 2){
+    background-color: yellow;
+}
+section:hover:nth-child(6) h2{
+    font-size:40px;
+}
+section:nth-child(7) input:focus{
+    background-color: black;
+    color:white;
+}
+a[href*="./p"]{
+    border-top:3px solid red;
 }
